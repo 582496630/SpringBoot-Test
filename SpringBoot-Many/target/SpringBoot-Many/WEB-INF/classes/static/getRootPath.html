@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>获取主机根路径</title>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+</head>
+<body>
+<input type="button" value="点击显示获取的路径" style="width: 200px;hight:30px;" onclick="getRootPath()"  />
+<p id="pid">获取当前网址:</p>
+<script type="text/javascript">
+function getRootPath(){  
+    //获取当前网址，如： http://localhost:8088/test/test.jsp  
+    var curPath=window.document.location.href; 
+    $("#pid").append(curPath)
+    
+    //获取主机地址之后的目录，如： test/test.jsp  
+    var pathName=window.document.location.pathname;  
+    $("#pid").after("<p>4、获取主机地址之后的目录:"+pathName+"</p>")
+    
+    //获取主机地址，如： http://localhost:8088  
+    var pos=curPath.indexOf(pathName);  
+    $("#pid").after("<p>3、获取根路径的位数："+pos+"</p>")
+    var localhostPaht=curPath.substring(0,pos);  
+    $("#pid").after("<p>2、获取主机地址:"+localhostPaht+"</p>")
+    //获取带"/"的项目名，如：/test  
+    var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);  
+    $("#pid").after("<p>1、获取带'/'的项目名:"+projectName+"</p>")
+    //return(localhostPaht+projectName);  
+    
+}
+</script>
+</body>
+</html>

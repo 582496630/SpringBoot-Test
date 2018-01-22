@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<protocol>
+<title>
+<title_head>一、概述</title_head>
+<title_body>本协议用于音符大作战游戏服务端和客户端通信,经商定采用TCP传输协议和JSON文档格式。</title_body>
+</title>
+
+<title>
+<title_head>二、内容</title_head>
+
+<title_body>
+<body_head>1、约定</body_head>
+<body>P:  piano,钢琴端,又称客户端</body>
+<body>C:  control,控制端,又称服务端</body>
+<body>服务端口号:  19999</body>
+<body>客户端口号:  随机生成</body>
+<body>service(string):    报文类型</body>
+<body>packetID(string): 通信ID,系统时间值ms</body>
+<body>ack(bool):      是否需要立即回复(true表示要立即回复)</body>
+<body>data(json):     数据域</body>
+</title_body>
+
+<title_body>
+<body_head>2、协议详述</body_head>
+<body>
+<body_1>报文分类</body_1>
+<body_1>
+<body_2>控制报文: 用于服务端控制客户端</body_2>
+<body_2>数据报文: 用于协议双方进行数据传输</body_2>
+</body_1>
+
+<body_1>报文详情</body_1>
+</body>
+</title_body>
+
+
+</title>
+
+</protocol>
+
+
+
+

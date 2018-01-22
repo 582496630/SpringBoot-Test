@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout2">
+<head>
+<meta charset="UTF-8" />
+<title>添加学习资料</title>
+</head>
+<body>
+	<section layout:fragment="layout2">
+		<div>
+			<form id="addWebForm" name="addWebForm" method="post">
+				<label>网站名称：</label> 
+					<input type="text" name="webName" style="background-color: white;" /> 
+				<br /> 
+				<label>网站地址：</label> 
+					<input type="text" name="webAddress" style="background-color: white;" />
+				<br />
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="button"
+						onclick="commit('addWebForm','/learn/addLearnWeb')">
+						&nbsp;保存
+					</button>
+					<button type="button" onclick="closeModel()">
+						&nbsp;取消
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+</body>
+</html>

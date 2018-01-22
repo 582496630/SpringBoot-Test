@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <!--将数据从程序输出到XML中！-->
+  <person id="001" gender="male">
+    <name>刘德华</name>
+    <address>香港</address>
+  </person>
+  <person id="002" gender="male">
+    <name>林志颖</name>
+    <address>台湾</address>
+  </person>
+  <person>
+    <name>爱德华</name>
+    <address>米国</address>
+    <language>中文</language>
+  </person>
+  <person>
+    <name>爱德华</name>
+    <address>米国</address>
+    <language>中文</language>
+  </person>
+</people>
+
