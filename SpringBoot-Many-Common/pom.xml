@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SpringBoot</groupId>
+	<artifactId>SpringBoot-Many-Common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<description>SpringBoot知识点整合实体类</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<!-- MyBatis Generator -->
+		<!-- Java接口和实体类 -->
+		<!-- ${basedir} 表示项目根目录 一般是默认如此 -->
+		<targetJavaProject>${basedir}/src/main/java</targetJavaProject>
+		<targetMapperPackage>com.springboot.many.mapping.mapper</targetMapperPackage>
+		<targetModelPackage>com.springboot.many.model</targetModelPackage>
+		<!-- XML生成路径 -->
+		<targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
+		<targetXMLPackage>mapper</targetXMLPackage>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<!--通用Mapper -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper</artifactId>
+			<version>3.3.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<!-- 自动生成Mapper 实体类 XML文件 -->
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>1.3.2</version>
+				<configuration>
+					<configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
+					<overwrite>true</overwrite>
+					<verbose>true</verbose>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>mysql</groupId>
+						<artifactId>mysql-connector-java</artifactId>
+						<version>5.1.39</version>
+					</dependency>
+					<dependency>
+						<groupId>tk.mybatis</groupId>
+						<artifactId>mapper</artifactId>
+						<version>3.3.8</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+		<finalName>SpringBoot-Many-Common</finalName>
+	</build>
+</project>

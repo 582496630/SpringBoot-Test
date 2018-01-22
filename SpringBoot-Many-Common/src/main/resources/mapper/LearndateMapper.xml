@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.many.mapping.mapper.LearndateMapper">
+  <resultMap id="BaseResultMap" type="com.springboot.many.model.Learndate">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="u_id" jdbcType="INTEGER" property="uId" />
+    <result column="web_name" jdbcType="VARCHAR" property="webName" />
+    <result column="web_address" jdbcType="VARCHAR" property="webAddress" />
+  </resultMap>
+  
+
+	<!-- 根据id批量删除反馈信息 -->
+	<delete id="deleteByIds" parameterType="list">
+		delete from learndate
+		<where>
+			<if test="learnIds != null">
+				id IN
+				<foreach close=")" collection="learnIds" item="tutorId" open="(" separator=",">
+					#{tutorId}
+				</foreach>
+			</if>
+		</where>
+	</delete>
+	<!-- 查询语句（可以模糊查询） -->
+	<select id="selectLearnWeb" parameterType="Learndate" resultType="com.springboot.many.model.Learndate">
+		select * from learndate
+		<where>
+			<if test="webName != null">
+				<!-- web_name like CONCAT('%',#{webName},'%' ) -->
+				web_name like '%${webName}%'
+			</if>
+			<if test="webAddress != null">
+				 web_address like CONCAT('%',#{webAddress},'%' ) 
+			</if>
+		</where>
+	</select>
+  
+</mapper>
