@@ -16,32 +16,38 @@ import com.springboot.many.model.Learndate;
  */
 @Service
 public class LearnService {
-	
+
 	@Autowired
 	private LearndateMapper learndateMapper;
+
 	/**
 	 * 根据用户ID获取学习网址信息
+	 * 
 	 * @param uid
 	 * @return List<Learndate
 	 */
-	public List<Learndate> selectLearns(Integer uid){
+	public List<Learndate> selectLearns(Integer uid) {
 		Learndate learndate = new Learndate();
 		learndate.setuId(uid);
 		return learndateMapper.select(learndate);
 	}
+
 	/**
-	 * 根据实体属性  添加
+	 * 根据实体属性 添加
+	 * 
 	 * @param learndate
 	 */
-	public void addWeb(Learndate learndate){
+	public void addWeb(Learndate learndate) {
 		learndateMapper.insertSelective(learndate);
 	}
+
 	/**
 	 * 根据id list集 实现批量删除
+	 * 
 	 * @param ids
 	 * @return Integer
 	 */
-	public Integer deleteWeb(List<Integer> ids){
+	public Integer deleteWeb(List<Integer> ids) {
 		return learndateMapper.deleteByIds(ids);
 	}
 

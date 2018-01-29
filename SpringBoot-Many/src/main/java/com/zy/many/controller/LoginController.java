@@ -25,7 +25,7 @@ import com.zy.many.service.UserServices;
  */
 @Controller
 public class LoginController {
-	
+
 	private static String ERROR = "error";
 
 	@Autowired
@@ -92,28 +92,32 @@ public class LoginController {
 			return map;
 		}
 	}
+
 	/**
 	 * 退出登录
+	 * 
 	 * @param model
 	 * @param request
 	 * @return
 	 */
 	@RequestMapping("/exitLogin")
-	public String exitLogin(Model model,HttpServletRequest request){
+	public String exitLogin(Model model, HttpServletRequest request) {
 		String username = (String) request.getSession().getAttribute("loginname");
-		request.getSession().invalidate();//使session失效
-		//request.getSession().removeAttribute("loginname");;//移除session中的某一个属性
-		
-		System.out.println("用户“"+username+"”已退出");
+		request.getSession().invalidate();// 使session失效
+		// request.getSession().removeAttribute("loginname");;//移除session中的某一个属性
+
+		System.out.println("用户“" + username + "”已退出");
 		return "redirect:tologin";
 	}
+
 	/**
 	 * 跳转到警告页面
+	 * 
 	 * @param model
 	 * @return
 	 */
 	@RequestMapping("/errorHtml")
-	public String error(Model model){
+	public String error(Model model) {
 		model.addAttribute(ERROR, "用户未登录，请先登录");
 		return "error";
 	}

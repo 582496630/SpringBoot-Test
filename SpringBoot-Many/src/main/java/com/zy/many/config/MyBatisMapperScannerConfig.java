@@ -21,7 +21,6 @@ package com.zy.many.config;
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.*/
- 
 
 import java.util.Properties;
 
@@ -39,17 +38,17 @@ import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 @Configuration
 public class MyBatisMapperScannerConfig {
 
-    @Bean
-    public MapperScannerConfigurer mapperScannerConfigurer() {
-        MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
-        mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-        mapperScannerConfigurer.setBasePackage("com.springboot.many.mapping.mapper");
-        Properties properties = new Properties();
-        properties.setProperty("mappers", "com.springboot.many.mapping.MyMapper");
-        properties.setProperty("notEmpty", "false");
-        properties.setProperty("IDENTITY", "MYSQL");
-        mapperScannerConfigurer.setProperties(properties);
-        return mapperScannerConfigurer;
-    }
+	@Bean
+	public MapperScannerConfigurer mapperScannerConfigurer() {
+		MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
+		mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
+		mapperScannerConfigurer.setBasePackage("com.springboot.many.mapping.mapper");
+		Properties properties = new Properties();
+		properties.setProperty("mappers", "com.springboot.many.mapping.MyMapper");
+		properties.setProperty("notEmpty", "false");
+		properties.setProperty("IDENTITY", "MYSQL");
+		mapperScannerConfigurer.setProperties(properties);
+		return mapperScannerConfigurer;
+	}
 
 }

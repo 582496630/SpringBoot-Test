@@ -12,20 +12,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/xml")
 @Controller
 public class XMLController {
-	
+
 	@Autowired
 	private JDomDemo jDomDemoServices;
-	
+
 	@RequestMapping(value = "/xmlOut")
-	public String xmlOut(Model model){
+	public String xmlOut(Model model) {
 		String path = TestXml.class.getResource("/templates/XML/my.xml").getPath();
 		List<String> list = jDomDemoServices.parserXml(path);
 		model.addAttribute("list", list);
-		
+
 		return "XML/XMLout";
 	}
+
 	@RequestMapping(value = "/gameProtocol")
-	public String gameProtocol(Model model){
+	public String gameProtocol(Model model) {
 		String path = TestXml.class.getResource("/templates/XML/game.xml").getPath();
 		List<GameProtocolXMLEntity> list;
 		try {
@@ -36,6 +37,5 @@ public class XMLController {
 		}
 		return "XML/XMLout";
 	}
-	
 
 }

@@ -39,7 +39,7 @@ public class ExcelOperater {
 	private LearnService learnService;
 
 	public void excelIn(Integer userId, String pathname) throws IOException {
-		//获取用户信息
+		// 获取用户信息
 		Users users = userServices.selectByPrimaryKey(userId);
 		// 获取用户对应的学习网址信息
 		List<Learndate> learndates = learnService.selectLearns(userId);
@@ -64,14 +64,14 @@ public class ExcelOperater {
 			titleFormat.setAlignment(Alignment.CENTRE);
 			// 设置文本垂直居中对齐
 			titleFormat.setVerticalAlignment(VerticalAlignment.CENTRE);
-			
+
 			/**
 			 * 导出用户信息
 			 */
 			// 把单元格（column, row）到单元格（column1, row1）进行合并。
 			// mergeCells(column, row, column1, row1);
 			sheet.mergeCells(0, 0, 4, 0);// 单元格合并方法
-			Label labU = new Label(0, 0, "用户信息",titleFormat);// 用户信息表头
+			Label labU = new Label(0, 0, "用户信息", titleFormat);// 用户信息表头
 			Label lab = new Label(0, 1, "用户ID");// 用户信息字段
 			Label lab1 = new Label(1, 1, "用户名");
 			Label lab2 = new Label(2, 1, "密码");
@@ -87,7 +87,7 @@ public class ExcelOperater {
 			 * 导出学习网址信息
 			 */
 			sheet.mergeCells(0, 3, 3, 3);// 单元格合并方法
-			Label labL = new Label(0, 3, "用户学习网址信息",titleFormat);// 学习网站信息表头
+			Label labL = new Label(0, 3, "用户学习网址信息", titleFormat);// 学习网站信息表头
 			Label labl = new Label(0, 4, "序号");// 学习网站信息字段
 			Label labl1 = new Label(1, 4, "ID");
 			Label labl2 = new Label(2, 4, "网站名称");
@@ -112,7 +112,7 @@ public class ExcelOperater {
 				// 学习网站信息内容
 				for (int i = 0; i < entry.getValue().size(); i++) {
 					Learndate learndate = entry.getValue().get(i);
-					Label label5 = new Label(0, i + 5, String.valueOf(i+1));
+					Label label5 = new Label(0, i + 5, String.valueOf(i + 1));
 					Label label6 = new Label(1, i + 5, String.valueOf(learndate.getId()));
 					Label label7 = new Label(2, i + 5, String.valueOf(learndate.getWebName()));
 					Label label8 = new Label(3, i + 5, String.valueOf(learndate.getWebAddress()));

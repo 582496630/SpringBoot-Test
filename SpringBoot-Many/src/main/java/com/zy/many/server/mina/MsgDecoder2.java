@@ -112,11 +112,9 @@ public class MsgDecoder2 implements ProtocolDecoder {
 		}
 
 		// 重置
-	/*	public void reset() {
-			matchCount = 0;
-			decoder.reset();
-		}
-*/
+		/*
+		 * public void reset() { matchCount = 0; decoder.reset(); }
+		 */
 		// 追加数据
 		public void append(IoBuffer in) {
 			getBuf().put(in);

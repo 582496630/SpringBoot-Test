@@ -22,14 +22,15 @@
         </encoder>
     </appender>
 
-    <appender name="File" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${BASE}/many.log</file>
+<!-- 用于把INFO及INFO级别以上从日志输出内容记录到文件中，并定时压缩成ZIP -->
+<!--     <appender name="File" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${BASE}/info.log</file>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>INFO</level>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>
-                ${BASE}/many.%d{yyyy-MM-dd}.log.zip
+                ${BASE}/info.%d{yyyy-MM-dd}.log.zip
             </fileNamePattern>
         </rollingPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -37,9 +38,10 @@
                 %date %level [%thread] %10logger [%file:%line] %msg%n
             </pattern>
         </layout>
-    </appender>
-    <appender name="FileError" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${BASE}/many-error.log</file>
+    </appender> -->
+    <!-- 用于把ERROR及ERROR级别以上从日志输出内容记录到文件中，并定时压缩成ZIP -->
+<!--     <appender name="FileError" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${BASE}/error.log</file>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
             <onMatch>ACCEPT</onMatch>
@@ -55,10 +57,11 @@
                 %date %level [%thread] %10logger [%file:%line] %msg%n
             </pattern>
         </layout>
-    </appender>
+    </appender> -->
  
-    <appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">  
-        <smtpHost>${smtpHost}</smtpHost>  
+<!--   用于发送日志邮件  
+	<appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">  
+        <smtpHost>${smtpHost}</smtpHost> 
         <smtpPort>${smtpPort}</smtpPort>  
         <username>${username}</username>  
         <password>${password}</password>  
@@ -77,9 +80,10 @@
             <onMatch>ACCEPT</onMatch>    
             <onMismatch>DENY</onMismatch>      
         </filter>  
-     </appender>  
-    <!-- 把SQL语句输出到一个日志文件 -->
-      <appender name="sql" class="ch.qos.logback.core.rolling.RollingFileAppender">
+     </appender>   -->
+
+<!-- 把SQL语句输出到一个日志文件 -->
+<!--       <appender name="sql" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${BASE}/sql.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${BASE}/sql.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
@@ -90,9 +94,9 @@
                 %date %level [%thread] %10logger [%file:%line] %msg%n
             </pattern>
         </layout>
-    </appender>
+    </appender> -->
     <!-- 在控制台打印SQL语句 -->
-    <logger name="com.springboot.many.mapping.mapper" level="DEBUG">
+<!--     <logger name="com.springboot.many.mapping.mapper" level="DEBUG">
     <appender-ref ref="sql"/>
     </logger>
     
@@ -113,13 +117,15 @@
     </logger>
     <logger name="org.springframework">
         <level value="INFO"/>
-    </logger>
+    </logger> -->
 
+	<!-- 输出的日志级别 -->
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="File"/>
-        <appender-ref ref="FileError"/>
-        <!--  加入email参数 -->
-        <appender-ref ref="EMAIL"/>
+       <!--  把日志内容记录到文件中
+       <appender-ref ref="File"/>
+        <appender-ref ref="FileError"/> -->
+         <!-- 加入email参数 -->
+        <!-- <appender-ref ref="EMAIL"/> -->
     </root>
 </configuration>

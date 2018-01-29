@@ -19,22 +19,22 @@ public class SocketClient {
 			socket = new Socket("localhost", 1110);
 			// 获取输出流，向服务器传输数据
 			outputStream = socket.getOutputStream();
-			//创建scanner 实例
-			/*Scanner scanner = new Scanner(System.in);
-			//转型
-			String b = String.valueOf(scanner);*/
-			
+			// 创建scanner 实例
+			/*
+			 * Scanner scanner = new Scanner(System.in); //转型 String b =
+			 * String.valueOf(scanner);
+			 */
+
 			String b = "hello";
 			outputStream.write(b.getBytes());
-			
-			
+
 			// 获取输入流，获取服务器的响应
 			inputStream = socket.getInputStream();
 			byte[] buff = new byte[1024];
 			int len = 0;
 			len = inputStream.read(buff);
 			// 打印服务端的内容
-			System.out.println(new String(buff, 0, len,"UTF-8"));
+			System.out.println(new String(buff, 0, len, "UTF-8"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

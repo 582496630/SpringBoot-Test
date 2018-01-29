@@ -7,7 +7,7 @@ public class Ret {
 	public enum Status {
 		ERROR("E"), WARNING("W"), SUCCESS("S");
 		private String data;
-		
+
 		private Status(String data) {
 			this.data = data;
 		}
@@ -17,14 +17,14 @@ public class Ret {
 			return data;
 		}
 	}
-	
+
 	@SuppressWarnings("serial")
 	public class Wrapper extends HashMap<String, Object> {
 
 		public Wrapper(String key, Object data) {
 			super.put(key, data);
 		}
-		
+
 		@Override
 		@Deprecated
 		public Object put(String key, Object data) {
@@ -53,8 +53,8 @@ public class Ret {
 		this.message = message;
 		this.data = "";
 	}
-	
-	private Ret(String status,String message,Object data) {
+
+	private Ret(String status, String message, Object data) {
 		this.status = status;
 		this.message = message;
 		this.data = data;
@@ -67,7 +67,7 @@ public class Ret {
 	public String getMessage() {
 		return message;
 	}
-	
+
 	public Object getdata() {
 		return data;
 	}
@@ -91,10 +91,9 @@ public class Ret {
 	public static Ret success(String key, Object data) {
 		return new Ret(key, data);
 	}
-	
-	
-	public static Ret success(String status,String message,Object data) {
-		return new Ret(status,message,data);
+
+	public static Ret success(String status, String message, Object data) {
+		return new Ret(status, message, data);
 	}
 
 }

@@ -30,9 +30,11 @@ public class SocketServer {
 
 			// 获取输出流，给客户端发消息
 			outputStream = socket.getOutputStream();
-			/*Scanner scanner = new Scanner(System.in);
-			String b = String.valueOf(scanner)+"S";*/
-			
+			/*
+			 * Scanner scanner = new Scanner(System.in); String b =
+			 * String.valueOf(scanner)+"S";
+			 */
+
 			String b = "收到";
 			outputStream.write(b.getBytes());
 

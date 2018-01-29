@@ -1,6 +1,8 @@
 package com.springboot.zy.services;
 
 import java.util.List;
+
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,12 +30,17 @@ public class IndexServices {
 	        });
 	    }*/
 	
+	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(IndexServices.class);
 	@Autowired
 	private UserMapper userMapper;
 	@Autowired
 	private LearndateMapper learndateMapper;
 	
 	public List<Users> getUsers(){
+		logger.info("info");
+		logger.error("error");
+		logger.debug("debug");
+		System.out.println("111");
 		return userMapper.getUsers();
 	}
 	

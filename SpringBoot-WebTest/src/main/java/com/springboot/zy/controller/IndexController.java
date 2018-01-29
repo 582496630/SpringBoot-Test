@@ -1,6 +1,9 @@
 package com.springboot.zy.controller;
 
 import java.util.List;
+
+import org.apache.log4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,12 +17,16 @@ import com.springboot.zy.services.IndexServices;
 @Controller
 public class IndexController {
 	
+	private static final org.slf4j.Logger logger = LoggerFactory.getLogger(IndexController.class);
 	
 	@RequestMapping(value = "index", method = RequestMethod.GET)
 	public String index(){
-		return "index";
+		logger.info("slf4j{}{}","1","2");
+		
+		return "content";
 	}
-	
+
+
 	  @Autowired
 	    private IndexServices indexser;
 

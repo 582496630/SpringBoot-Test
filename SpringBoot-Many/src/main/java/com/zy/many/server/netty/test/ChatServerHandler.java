@@ -20,22 +20,21 @@ import io.netty.channel.ChannelPromise;
 public class ChatServerHandler extends ChannelHandlerAdapter {
 	private static final Logger logger = LoggerFactory.getLogger(ChatServerHandler.class);
 
-
-
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 		try {
-	        //获得接收客户端的数据并进行处理
-	        ByteBuf buf = (ByteBuf)msg;
-	        byte[] data = new byte[buf.readableBytes()];
-	        buf.readBytes(data);
-	        String str = new String(data,"UTF-8");
-	        System.out.println("server get:" + str);
+			// 获得接收客户端的数据并进行处理
+			ByteBuf buf = (ByteBuf) msg;
+			byte[] data = new byte[buf.readableBytes()];
+			buf.readBytes(data);
+			String str = new String(data, "UTF-8");
+			System.out.println("server get:" + str);
 
-			//String body = (String) msg;
-			//logger.info(body);
+			// String body = (String) msg;
+			// logger.info(body);
 
-			//TCPMessage message = JSONObject.parseObject(body, TCPMessage.class);
-	        TCPMessage message = JsonUtils.decode(str, TCPMessage.class);
+			// TCPMessage message = JSONObject.parseObject(body,
+			// TCPMessage.class);
+			TCPMessage message = JsonUtils.decode(str, TCPMessage.class);
 			login(ctx, message);
 		} catch (Exception e) {
 			System.out.println("eeeeeeee");
@@ -46,22 +45,24 @@ public class ChatServerHandler extends ChannelHandlerAdapter {
 		String userType = message.info("usertype");
 		// 用户名
 		String userName = message.info("username");
-		System.out.println("login 逻辑："+userName+userType);
+		System.out.println("login 逻辑：" + userName + userType);
 	}
+
 	@Override
 	public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
 		ctx.flush();// 将消息发送队列中的消息写入到SocketChannel中发送给对方
 	}
-	  @Override
-	    public void connect(
-	            ChannelHandlerContext ctx,
-	            SocketAddress remoteAddress, SocketAddress localAddress, ChannelPromise promise) throws Exception {
-	        ctx.connect(remoteAddress, localAddress, promise);
-	        //System.out.println("发现有客户端连上");
-	    }
-	  @Override
-	    public void channelActive(ChannelHandlerContext ctx) throws Exception {
-	        ctx.fireChannelActive();
-	        System.out.println("发现有客户端连上");
-	    }
+
+	@Override
+	public void connect(ChannelHandlerContext ctx, SocketAddress remoteAddress, SocketAddress localAddress,
+			ChannelPromise promise) throws Exception {
+		ctx.connect(remoteAddress, localAddress, promise);
+		// System.out.println("发现有客户端连上");
+	}
+
+	@Override
+	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+		ctx.fireChannelActive();
+		System.out.println("发现有客户端连上");
+	}
 }

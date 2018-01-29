@@ -1,0 +1,389 @@
+2018-01-24 14:56:44.652 ERROR 1252 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 14:56:44.733  INFO 1252 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 1252 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 14:56:44.733  INFO 1252 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 14:56:44.927  INFO 1252 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cd629b3: startup date [Wed Jan 24 14:56:44 CST 2018]; root of context hierarchy
+2018-01-24 14:56:45.984  INFO 1252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 14:56:45.995  INFO 1252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 14:56:45.996  INFO 1252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 14:56:46.105  INFO 1252 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 14:56:46.106  INFO 1252 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1182 ms
+2018-01-24 14:56:46.258  INFO 1252 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 14:56:46.262  INFO 1252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 14:56:46.264  INFO 1252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 14:56:46.266  INFO 1252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 14:56:46.267  INFO 1252 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 14:56:46.769  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cd629b3: startup date [Wed Jan 24 14:56:44 CST 2018]; root of context hierarchy
+2018-01-24 14:56:46.816  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 14:56:46.817  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 14:56:46.818  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 14:56:46.822  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 14:56:46.823  INFO 1252 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 14:56:46.854  INFO 1252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 14:56:46.854  INFO 1252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 14:56:46.891  INFO 1252 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 14:56:47.387  INFO 1252 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 14:56:47.452  INFO 1252 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 14:56:47.460  INFO 1252 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.96 seconds (JVM running for 3.787)
+2018-01-24 14:58:41.852  INFO 1252 --- [http-nio-1111-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 14:58:41.864  INFO 1252 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 14:58:41.865  INFO 1252 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 14:58:41.887  INFO 1252 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-01-24 14:58:41.914  INFO 1252 --- [http-nio-1111-exec-2] c.s.zy.controller.IndexController        : slf4j12
+2018-01-24 15:01:12.326  INFO 1252 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:01:12.327  INFO 1252 --- [RMI TCP Connection(14)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1cd629b3: startup date [Wed Jan 24 14:56:44 CST 2018]; root of context hierarchy
+2018-01-24 15:01:12.334  INFO 1252 --- [RMI TCP Connection(14)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:01:15.763 ERROR 10500 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 15:01:15.820  INFO 10500 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 10500 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:01:15.820  INFO 10500 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:01:15.998  INFO 10500 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:01:15 CST 2018]; root of context hierarchy
+2018-01-24 15:01:16.958  INFO 10500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:01:16.966  INFO 10500 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:01:16.968  INFO 10500 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:01:17.028  INFO 10500 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:01:17.029  INFO 10500 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1033 ms
+2018-01-24 15:01:17.141  INFO 10500 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:01:17.144  INFO 10500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:01:17.145  INFO 10500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:01:17.145  INFO 10500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:01:17.145  INFO 10500 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:01:17.663  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:01:15 CST 2018]; root of context hierarchy
+2018-01-24 15:01:17.706  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:01:17.708  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:01:17.708  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:01:17.712  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:01:17.712  INFO 10500 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:01:17.739  INFO 10500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:01:17.739  INFO 10500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:01:17.772  INFO 10500 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:01:18.248  INFO 10500 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:01:18.310  INFO 10500 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:01:18.313  INFO 10500 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.681 seconds (JVM running for 3.264)
+2018-01-24 15:01:36.811  INFO 10500 --- [http-nio-1111-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:01:36.819  INFO 10500 --- [http-nio-1111-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:01:36.819  INFO 10500 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:01:36.839  INFO 10500 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-01-24 15:01:36.861  INFO 10500 --- [http-nio-1111-exec-1] c.s.zy.controller.IndexController        : info
+2018-01-24 15:01:36.862 ERROR 10500 --- [http-nio-1111-exec-1] c.s.zy.controller.IndexController        : error
+2018-01-24 15:02:40.214  INFO 10500 --- [http-nio-1111-exec-5] c.s.zy.controller.IndexController        : slf4j12
+2018-01-24 15:02:53.296  INFO 10500 --- [http-nio-1111-exec-8] c.s.zy.controller.IndexController        : info
+2018-01-24 15:02:53.296 ERROR 10500 --- [http-nio-1111-exec-8] c.s.zy.controller.IndexController        : error
+2018-01-24 15:03:19.576  INFO 10500 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:03:19.576  INFO 10500 --- [RMI TCP Connection(10)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:01:15 CST 2018]; root of context hierarchy
+2018-01-24 15:03:19.578  INFO 10500 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:03:22.897  INFO 9188 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 9188 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:03:22.902  INFO 9188 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:03:23.079  INFO 9188 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39b43d60: startup date [Wed Jan 24 15:03:23 CST 2018]; root of context hierarchy
+2018-01-24 15:03:24.010  INFO 9188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:03:24.018  INFO 9188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:03:24.019  INFO 9188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:03:24.079  INFO 9188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:03:24.079  INFO 9188 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1002 ms
+2018-01-24 15:03:24.203  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:03:24.208  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:03:24.209  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:03:24.209  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:03:24.209  INFO 9188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:03:24.697  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39b43d60: startup date [Wed Jan 24 15:03:23 CST 2018]; root of context hierarchy
+2018-01-24 15:03:24.749  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:03:24.751  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:03:24.751  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:03:24.755  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:03:24.755  INFO 9188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:03:24.783  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:03:24.783  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:03:24.859  INFO 9188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:03:25.367  INFO 9188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:03:25.431  INFO 9188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:03:25.440  INFO 9188 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.724 seconds (JVM running for 3.275)
+2018-01-24 15:05:07.440  INFO 9188 --- [http-nio-1111-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:05:07.448  INFO 9188 --- [http-nio-1111-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:05:07.448  INFO 9188 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:05:07.466  INFO 9188 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-24 15:05:07.484  INFO 9188 --- [http-nio-1111-exec-1] c.s.zy.controller.IndexController        : info
+2018-01-24 15:05:07.484 ERROR 9188 --- [http-nio-1111-exec-1] c.s.zy.controller.IndexController        : error
+2018-01-24 15:05:33.969  INFO 9188 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:05:33.969  INFO 9188 --- [RMI TCP Connection(9)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39b43d60: startup date [Wed Jan 24 15:03:23 CST 2018]; root of context hierarchy
+2018-01-24 15:05:33.971  INFO 9188 --- [RMI TCP Connection(9)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:05:37.422  INFO 7508 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 7508 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:05:37.426  INFO 7508 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:05:37.602  INFO 7508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dafbe45: startup date [Wed Jan 24 15:05:37 CST 2018]; root of context hierarchy
+2018-01-24 15:05:38.540  INFO 7508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:05:38.547  INFO 7508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:05:38.548  INFO 7508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:05:38.612  INFO 7508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:05:38.612  INFO 7508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1012 ms
+2018-01-24 15:05:38.722  INFO 7508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:05:38.726  INFO 7508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:05:38.726  INFO 7508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:05:38.726  INFO 7508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:05:38.726  INFO 7508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:05:39.206  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dafbe45: startup date [Wed Jan 24 15:05:37 CST 2018]; root of context hierarchy
+2018-01-24 15:05:39.258  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:05:39.259  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:05:39.260  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:05:39.264  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:05:39.265  INFO 7508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:05:39.297  INFO 7508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:05:39.298  INFO 7508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:05:39.330  INFO 7508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:05:39.810  INFO 7508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:05:39.881  INFO 7508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:05:39.889  INFO 7508 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.653 seconds (JVM running for 3.208)
+2018-01-24 15:05:42.593  INFO 7508 --- [http-nio-1111-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:05:42.600  INFO 7508 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:05:42.600  INFO 7508 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:05:42.619  INFO 7508 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-01-24 15:05:42.645  INFO 7508 --- [http-nio-1111-exec-2] c.s.zy.controller.IndexController        : info
+2018-01-24 15:05:42.645 ERROR 7508 --- [http-nio-1111-exec-2] c.s.zy.controller.IndexController        : error
+2018-01-24 15:07:57.751  INFO 7508 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:07:57.751  INFO 7508 --- [RMI TCP Connection(12)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5dafbe45: startup date [Wed Jan 24 15:05:37 CST 2018]; root of context hierarchy
+2018-01-24 15:07:57.755  INFO 7508 --- [RMI TCP Connection(12)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:08:01.198 ERROR 10184 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 15:08:01.256  INFO 10184 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 10184 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:08:01.257  INFO 10184 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:08:01.433  INFO 10184 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609bcfb6: startup date [Wed Jan 24 15:08:01 CST 2018]; root of context hierarchy
+2018-01-24 15:08:02.361  INFO 10184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:08:02.368  INFO 10184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:08:02.369  INFO 10184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:08:02.431  INFO 10184 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:08:02.432  INFO 10184 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1002 ms
+2018-01-24 15:08:02.545  INFO 10184 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:08:02.549  INFO 10184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:08:02.549  INFO 10184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:08:02.549  INFO 10184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:08:02.550  INFO 10184 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:08:03.004  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609bcfb6: startup date [Wed Jan 24 15:08:01 CST 2018]; root of context hierarchy
+2018-01-24 15:08:03.048  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:08:03.049  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:08:03.049  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:08:03.053  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:08:03.053  INFO 10184 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:08:03.082  INFO 10184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:08:03.082  INFO 10184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:08:03.115  INFO 10184 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:08:03.569  INFO 10184 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:08:03.645  INFO 10184 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:08:03.648  INFO 10184 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.582 seconds (JVM running for 3.206)
+2018-01-24 15:09:32.264  INFO 10184 --- [http-nio-1111-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:09:32.271  INFO 10184 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:09:32.272  INFO 10184 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:09:32.289  INFO 10184 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-24 15:09:32.306  INFO 10184 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:09:32.306 ERROR 10184 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:10:12.888  INFO 10184 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:10:12.888  INFO 10184 --- [RMI TCP Connection(8)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@609bcfb6: startup date [Wed Jan 24 15:08:01 CST 2018]; root of context hierarchy
+2018-01-24 15:10:12.891  INFO 10184 --- [RMI TCP Connection(8)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:10:16.433  INFO 668 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 668 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:10:16.438  INFO 668 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:10:16.621  INFO 668 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f3187b0: startup date [Wed Jan 24 15:10:16 CST 2018]; root of context hierarchy
+2018-01-24 15:10:17.543  INFO 668 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:10:17.550  INFO 668 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:10:17.551  INFO 668 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:10:17.615  INFO 668 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:10:17.615  INFO 668 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 996 ms
+2018-01-24 15:10:17.727  INFO 668 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:10:17.732  INFO 668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:10:17.733  INFO 668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:10:17.733  INFO 668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:10:17.733  INFO 668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:10:18.188  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f3187b0: startup date [Wed Jan 24 15:10:16 CST 2018]; root of context hierarchy
+2018-01-24 15:10:18.230  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:10:18.230  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:10:18.231  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:10:18.234  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:10:18.234  INFO 668 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:10:18.262  INFO 668 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:10:18.262  INFO 668 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:10:18.299  INFO 668 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:10:18.762  INFO 668 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:10:18.821  INFO 668 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:10:18.832  INFO 668 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.581 seconds (JVM running for 3.173)
+2018-01-24 15:10:22.335  INFO 668 --- [http-nio-1111-exec-4] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:10:22.341  INFO 668 --- [http-nio-1111-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:10:22.341  INFO 668 --- [http-nio-1111-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:10:22.358  INFO 668 --- [http-nio-1111-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2018-01-24 15:10:22.376  INFO 668 --- [http-nio-1111-exec-4] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:10:22.377 ERROR 668 --- [http-nio-1111-exec-4] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:11:04.150  INFO 668 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:11:04.150  INFO 668 --- [RMI TCP Connection(9)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f3187b0: startup date [Wed Jan 24 15:10:16 CST 2018]; root of context hierarchy
+2018-01-24 15:11:04.152  INFO 668 --- [RMI TCP Connection(9)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:11:07.560 ERROR 4056 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 15:11:07.564 ERROR 4056 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: error  for 'com.springboot.zy.services'
+2018-01-24 15:11:07.613  INFO 4056 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 4056 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:11:07.613  INFO 4056 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:11:07.795  INFO 4056 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:11:07 CST 2018]; root of context hierarchy
+2018-01-24 15:11:08.708  INFO 4056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:11:08.715  INFO 4056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:11:08.716  INFO 4056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:11:08.779  INFO 4056 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:11:08.779  INFO 4056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 986 ms
+2018-01-24 15:11:08.894  INFO 4056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:11:08.898  INFO 4056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:11:08.898  INFO 4056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:11:08.898  INFO 4056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:11:08.898  INFO 4056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:11:09.362  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:11:07 CST 2018]; root of context hierarchy
+2018-01-24 15:11:09.403  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:11:09.404  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:11:09.404  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:11:09.408  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:11:09.409  INFO 4056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:11:09.439  INFO 4056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:11:09.439  INFO 4056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:11:09.473  INFO 4056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:11:09.932  INFO 4056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:11:09.985  INFO 4056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:11:09.993  INFO 4056 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.564 seconds (JVM running for 3.157)
+2018-01-24 15:11:34.896  INFO 4056 --- [http-nio-1111-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:11:34.901  INFO 4056 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:11:34.901  INFO 4056 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:11:34.918  INFO 4056 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2018-01-24 15:11:34.937  INFO 4056 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:11:34.937 ERROR 4056 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:12:38.753  INFO 4056 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:12:38.754  INFO 4056 --- [RMI TCP Connection(10)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:11:07 CST 2018]; root of context hierarchy
+2018-01-24 15:12:38.756  INFO 4056 --- [RMI TCP Connection(10)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:12:42.034 ERROR 4644 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 15:12:42.039 ERROR 4644 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn  for 'com.springboot.zy.services'
+2018-01-24 15:12:42.097  INFO 4644 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 4644 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:12:42.097  INFO 4644 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:12:42.279  INFO 4644 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fa1c212: startup date [Wed Jan 24 15:12:42 CST 2018]; root of context hierarchy
+2018-01-24 15:12:43.213  INFO 4644 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:12:43.220  INFO 4644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:12:43.221  INFO 4644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:12:43.284  INFO 4644 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:12:43.284  INFO 4644 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1007 ms
+2018-01-24 15:12:43.400  INFO 4644 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:12:43.404  INFO 4644 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:12:43.404  INFO 4644 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:12:43.405  INFO 4644 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:12:43.405  INFO 4644 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:12:43.871  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fa1c212: startup date [Wed Jan 24 15:12:42 CST 2018]; root of context hierarchy
+2018-01-24 15:12:43.912  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:12:43.913  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:12:43.914  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:12:43.918  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:12:43.918  INFO 4644 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:12:43.948  INFO 4644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:12:43.949  INFO 4644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:12:43.983  INFO 4644 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:12:44.446  INFO 4644 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:12:44.507  INFO 4644 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:12:44.513  INFO 4644 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.622 seconds (JVM running for 3.073)
+2018-01-24 15:12:48.680  INFO 4644 --- [http-nio-1111-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:12:48.688  INFO 4644 --- [http-nio-1111-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:12:48.688  INFO 4644 --- [http-nio-1111-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:12:48.708  INFO 4644 --- [http-nio-1111-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-01-24 15:12:48.732  INFO 4644 --- [http-nio-1111-exec-3] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:12:48.732 ERROR 4644 --- [http-nio-1111-exec-3] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:15:31.729  INFO 4644 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:15:31.735  INFO 4644 --- [RMI TCP Connection(11)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4fa1c212: startup date [Wed Jan 24 15:12:42 CST 2018]; root of context hierarchy
+2018-01-24 15:15:31.764  INFO 4644 --- [RMI TCP Connection(11)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:15:35.239 ERROR 924 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: info  for 'com.springboot.zy.controller'
+2018-01-24 15:15:35.246 ERROR 924 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn  for 'null'
+2018-01-24 15:15:35.299  INFO 924 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 924 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:15:35.299  INFO 924 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:15:35.485  INFO 924 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:15:35 CST 2018]; root of context hierarchy
+2018-01-24 15:15:36.433  INFO 924 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:15:36.440  INFO 924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:15:36.441  INFO 924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:15:36.516  INFO 924 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:15:36.516  INFO 924 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1033 ms
+2018-01-24 15:15:36.642  INFO 924 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:15:36.649  INFO 924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:15:36.650  INFO 924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:15:36.650  INFO 924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:15:36.650  INFO 924 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:15:37.190  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:15:35 CST 2018]; root of context hierarchy
+2018-01-24 15:15:37.237  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:15:37.238  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:15:37.238  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:15:37.241  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:15:37.242  INFO 924 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:15:37.277  INFO 924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:15:37.277  INFO 924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:15:37.311  INFO 924 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:15:37.805  INFO 924 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:15:37.880  INFO 924 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:15:37.887  INFO 924 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.781 seconds (JVM running for 3.391)
+2018-01-24 15:16:16.363  INFO 924 --- [http-nio-1111-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:16:16.372  INFO 924 --- [http-nio-1111-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:16:16.372  INFO 924 --- [http-nio-1111-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:16:16.398  INFO 924 --- [http-nio-1111-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-01-24 15:16:16.432  INFO 924 --- [http-nio-1111-exec-3] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:16:16.433 ERROR 924 --- [http-nio-1111-exec-3] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:19:26.887  INFO 924 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:19:26.888  INFO 924 --- [RMI TCP Connection(13)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:15:35 CST 2018]; root of context hierarchy
+2018-01-24 15:19:26.892  INFO 924 --- [RMI TCP Connection(13)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:19:32.278 ERROR 4484 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn  for 'null'
+2018-01-24 15:19:32.321  INFO 4484 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 4484 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:19:32.322  INFO 4484 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:19:32.469  INFO 4484 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45f45fa1: startup date [Wed Jan 24 15:19:32 CST 2018]; root of context hierarchy
+2018-01-24 15:19:33.321  INFO 4484 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:19:33.328  INFO 4484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:19:33.329  INFO 4484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:19:33.383  INFO 4484 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:19:33.384  INFO 4484 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 917 ms
+2018-01-24 15:19:33.472  INFO 4484 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:19:33.474  INFO 4484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:19:33.475  INFO 4484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:19:33.475  INFO 4484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:19:33.477  INFO 4484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:19:33.866  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45f45fa1: startup date [Wed Jan 24 15:19:32 CST 2018]; root of context hierarchy
+2018-01-24 15:19:33.906  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:19:33.906  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:19:33.907  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:19:33.911  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:19:33.911  INFO 4484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:19:33.937  INFO 4484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:19:33.938  INFO 4484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:19:33.967  INFO 4484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:19:34.318  INFO 4484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:19:34.353  INFO 4484 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:19:34.357  INFO 4484 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.197 seconds (JVM running for 2.606)
+2018-01-24 15:19:38.252  INFO 4484 --- [http-nio-1111-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:19:38.256  INFO 4484 --- [http-nio-1111-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:19:38.257  INFO 4484 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:19:38.271  INFO 4484 --- [http-nio-1111-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-01-24 15:19:38.287  INFO 4484 --- [http-nio-1111-exec-1] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:19:38.288 ERROR 4484 --- [http-nio-1111-exec-1] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:19:53.019  INFO 4484 --- [http-nio-1111-exec-5] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:19:53.019 ERROR 4484 --- [http-nio-1111-exec-5] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:19:59.429  INFO 4484 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:19:59.429  INFO 4484 --- [RMI TCP Connection(7)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@45f45fa1: startup date [Wed Jan 24 15:19:32 CST 2018]; root of context hierarchy
+2018-01-24 15:19:59.431  INFO 4484 --- [RMI TCP Connection(7)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-01-24 15:20:02.810 ERROR 4628 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: warn  for 'com'
+2018-01-24 15:20:02.865  INFO 4628 --- [main] c.s.zy.SpringBootWebTestApplication      : Starting SpringBootWebTestApplication on sunhao-zhaoshang with PID 4628 (D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest\target\classes started by admin in D:\zy\java\gitHub\SpringBoot-Test\SpringBoot-WebTest)
+2018-01-24 15:20:02.866  INFO 4628 --- [main] c.s.zy.SpringBootWebTestApplication      : No active profile set, falling back to default profiles: default
+2018-01-24 15:20:03.044  INFO 4628 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:20:03 CST 2018]; root of context hierarchy
+2018-01-24 15:20:03.978  INFO 4628 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 1111 (http)
+2018-01-24 15:20:03.985  INFO 4628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-01-24 15:20:03.986  INFO 4628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-24 15:20:04.046  INFO 4628 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-01-24 15:20:04.046  INFO 4628 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1004 ms
+2018-01-24 15:20:04.160  INFO 4628 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-24 15:20:04.165  INFO 4628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-24 15:20:04.165  INFO 4628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-24 15:20:04.165  INFO 4628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-24 15:20:04.165  INFO 4628 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-24 15:20:04.621  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:20:03 CST 2018]; root of context hierarchy
+2018-01-24 15:20:04.664  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.zy.controller.IndexController.index()
+2018-01-24 15:20:04.665  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list2]}" onto public java.util.List<com.springboot.zy.domain.Learndate> com.springboot.zy.controller.IndexController.getLearndate()
+2018-01-24 15:20:04.666  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/list]}" onto public java.util.List<com.springboot.zy.domain.Users> com.springboot.zy.controller.IndexController.getUserList()
+2018-01-24 15:20:04.669  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-24 15:20:04.670  INFO 4628 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-24 15:20:04.699  INFO 4628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:20:04.699  INFO 4628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:20:04.734  INFO 4628 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-24 15:20:05.195  INFO 4628 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-01-24 15:20:05.244  INFO 4628 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 1111 (http)
+2018-01-24 15:20:05.248  INFO 4628 --- [main] c.s.zy.SpringBootWebTestApplication      : Started SpringBootWebTestApplication in 2.572 seconds (JVM running for 3.158)
+2018-01-24 15:20:11.042  INFO 4628 --- [http-nio-1111-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1495529330,1495691192,1497244994; Hm_lvt_8875c662941dbf07e39c556c8d97615f=1505267539; Hm_lvt_382f81c966395258f239157654081890=1508394070] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2018-01-24 15:20:11.049  INFO 4628 --- [http-nio-1111-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-24 15:20:11.049  INFO 4628 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-24 15:20:11.067  INFO 4628 --- [http-nio-1111-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-24 15:20:11.084  INFO 4628 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : info
+2018-01-24 15:20:11.084 ERROR 4628 --- [http-nio-1111-exec-2] c.springboot.zy.services.IndexServices   : error
+2018-01-24 15:27:55.805  INFO 4628 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-01-24 15:27:55.810  INFO 4628 --- [RMI TCP Connection(16)-127.0.0.1] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@560348e6: startup date [Wed Jan 24 15:20:03 CST 2018]; root of context hierarchy
+2018-01-24 15:27:55.834  INFO 4628 --- [RMI TCP Connection(16)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown

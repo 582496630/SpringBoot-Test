@@ -13,7 +13,7 @@ import org.apache.mina.filter.codec.textline.TextLineEncoder;
  * 编解码器生成工厂
  * 
  * @author zhouyou
- * @version  2017-10-24 17:16:15
+ * @version 2017-10-24 17:16:15
  */
 public class MsgProtocolCodecFactory implements ProtocolCodecFactory {
 	private ProtocolDecoder decoder;
@@ -28,6 +28,7 @@ public class MsgProtocolCodecFactory implements ProtocolCodecFactory {
 			encoder = new MsgEncoder();
 		}
 	}
+
 	@Override
 	public ProtocolDecoder getDecoder(IoSession session) throws Exception {
 		return decoder;

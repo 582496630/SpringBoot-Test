@@ -20,7 +20,7 @@ import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.timeout.IdleStateHandler;
 
-public class WKChatServer implements CommandLineRunner{
+public class WKChatServer implements CommandLineRunner {
 
 	@Resource
 	private ChatServerHandler chatServerHandler;
@@ -57,7 +57,8 @@ public class WKChatServer implements CommandLineRunner{
 	private class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
 		protected void initChannel(SocketChannel arg0) throws Exception {
 			// 添加心跳机制
-			//arg0.pipeline().addLast("IdleStateHandler", new IdleStateHandler(20, 0, 0, TimeUnit.SECONDS));
+			// arg0.pipeline().addLast("IdleStateHandler", new
+			// IdleStateHandler(20, 0, 0, TimeUnit.SECONDS));
 			// 解决粘包问题，以换行符为结尾解包
 			arg0.pipeline().addLast("LineBasedFrameDecoder", new LineBasedFrameDecoder(1024));
 			// 提前将收到的消息解成字符串，方便后续操作
@@ -65,7 +66,7 @@ public class WKChatServer implements CommandLineRunner{
 			// 业务逻辑处理
 			arg0.pipeline().addLast("ChatServerHandler", chatServerHandler);
 		}
-		
+
 	}
 
 	@Override

@@ -9,10 +9,10 @@ import org.apache.mina.filter.codec.ProtocolEncoderAdapter;
 import org.apache.mina.filter.codec.ProtocolEncoderOutput;
 
 /**
- * mina  编码，用不到，用的是mina框架自带的编码
+ * mina 编码，用不到，用的是mina框架自带的编码
  * 
  * @author zhouyou
- * @version   2017-10-24 17:15:43
+ * @version 2017-10-24 17:15:43
  */
 public class MsgEncoder extends ProtocolEncoderAdapter {
 
