@@ -35,10 +35,20 @@ public class IndexController {
 	    public List<Users> getUserList(){
 	        return indexser.getUsers();
 	    }
+	    @RequestMapping("/user")
+	    @ResponseBody
+	    public Users getUser(){
+	    	return indexser.getUser(1);
+	    }
 	    @RequestMapping("/list2")
 	    @ResponseBody
 	    public List<Learndate> getLearndate(){
 	    	return indexser.getLearndate();
+	    }
+	    @RequestMapping("/getAllLearnDate")
+	    @ResponseBody
+	    public List<Learndate> getLearndates(){
+	    	return indexser.getLearndates();
 	    }
 	
 	

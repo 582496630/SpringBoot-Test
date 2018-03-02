@@ -37,10 +37,12 @@ public class UserController {
 	 * 
 	 * @param model
 	 * @return
+	 * @throws Exception 
 	 */
 	@RequestMapping(value = "/userList")
-	public String selctUserList(Model model) {
-		List<Users> list = userServices.selectUser();
+	public String selctUserList(Model model) throws Exception {
+		Users users = new Users();
+		List<Users> list = userServices.select(users);
 		model.addAttribute("list", list);
 		return "user";
 	}

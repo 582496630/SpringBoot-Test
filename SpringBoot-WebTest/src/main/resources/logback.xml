@@ -83,7 +83,7 @@
      </appender>   -->
 
 <!-- 把SQL语句输出到一个日志文件 -->
-<!--       <appender name="sql" class="ch.qos.logback.core.rolling.RollingFileAppender">
+      <appender name="sql" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${BASE}/sql.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${BASE}/sql.%d{yyyy-MM-dd}.log.zip</fileNamePattern>
@@ -94,9 +94,9 @@
                 %date %level [%thread] %10logger [%file:%line] %msg%n
             </pattern>
         </layout>
-    </appender> -->
+    </appender>
     <!-- 在控制台打印SQL语句 -->
-<!--     <logger name="com.springboot.many.mapping.mapper" level="DEBUG">
+    <logger name="com.springboot.zy.dao" level="DEBUG">
     <appender-ref ref="sql"/>
     </logger>
     
@@ -117,10 +117,10 @@
     </logger>
     <logger name="org.springframework">
         <level value="INFO"/>
-    </logger> -->
+    </logger>
 
 	<!-- 输出的日志级别 -->
-    <root level="INFO">
+    <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
        <!--  把日志内容记录到文件中
        <appender-ref ref="File"/>

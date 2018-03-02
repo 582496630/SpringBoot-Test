@@ -15,7 +15,7 @@ import com.springboot.many.model.Imgshow;
  * @version 2017-08-02 09:20:24
  */
 @Service
-public class ImgShowService {
+public class ImgShowService extends _BaseService<Imgshow> {
 
 	@Autowired
 	private ImgshowMapper imgshowMapper;

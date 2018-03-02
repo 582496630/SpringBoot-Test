@@ -13,7 +13,7 @@ import com.springboot.many.model.Users;
  * @version 2017-08-02 09:21:35
  */
 @Service
-public class UserServices {
+public class UserServices extends _BaseService<Users> {
 
 	@Autowired
 	private UsersMapper usersMapper;

@@ -15,7 +15,7 @@ import com.springboot.many.model.Learndate;
  * @version
  */
 @Service
-public class LearnService {
+public class LearnService extends _BaseService<Learndate>{
 
 	@Autowired
 	private LearndateMapper learndateMapper;

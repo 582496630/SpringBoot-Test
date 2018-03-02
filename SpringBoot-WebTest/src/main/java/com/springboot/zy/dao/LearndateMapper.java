@@ -8,15 +8,16 @@ import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
 import com.springboot.zy.domain.Learndate;
+import com.springboot.zy.util.MyMapper;
 
 @Mapper
-public interface LearndateMapper {
+public interface LearndateMapper extends MyMapper<Learndate>{
 	
-	@Select(value = {"select * from learndate"})
+/*	@Select(value = {"select * from learndate"})
     @Results({
         @Result(property = "uId",  column = "u_id"),
         @Result(property = "webAddress",  column = "web_address"),
         @Result(property = "webName", column = "web_name")
-    })
+    })*/
 	public List<Learndate> getLearndate();
 }

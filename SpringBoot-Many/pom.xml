@@ -154,10 +154,10 @@
 	
 		<!-- 单点登录CAS -->
 		<dependency>
-            <groupId>net.unicon.cas</groupId>
-            <artifactId>cas-client-autoconfig-support</artifactId>
-            <version>1.2.0-GA</version>
-        </dependency>
+		    <groupId>net.unicon.cas</groupId>
+		    <artifactId>cas-client-autoconfig-support</artifactId>
+		    <version>1.5.0-GA</version>
+		</dependency>
 		
 		<!-- 一种非常流行的图形数据库Neo4J -->
 		<!-- <dependency>

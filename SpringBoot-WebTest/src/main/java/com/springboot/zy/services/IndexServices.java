@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.springboot.zy.dao.LearndateMapper;
@@ -12,7 +13,7 @@ import com.springboot.zy.domain.Learndate;
 import com.springboot.zy.domain.Users;
 
 @Service
-public class IndexServices {
+public class IndexServices extends _BaseService<Users>{
 
 /*	   //JDBC连接数据库
  		@Autowired
@@ -36,12 +37,24 @@ public class IndexServices {
 	@Autowired
 	private LearndateMapper learndateMapper;
 	
+	@Cacheable(value = "users")
 	public List<Users> getUsers(){
-		logger.info("info");
-		logger.error("error");
-		logger.debug("debug");
-		System.out.println("111");
-		return userMapper.getUsers();
+//		logger.info("info");
+//		logger.error("error");
+//		logger.debug("debug");
+		List<Users> list = userMapper.getUsers();
+		return list;
+	}
+	
+	@Cacheable(value = "learndate")
+	public List<Learndate> getLearndates() {
+		return learndateMapper.selectAll();
+	}
+	
+	@Cacheable(value = "users", key = "#id")
+	public Users getUser(Integer id){
+		Users user = userMapper.getUser(id);
+		return user;
 	}
 	
 	public List<Learndate> getLearndate(){

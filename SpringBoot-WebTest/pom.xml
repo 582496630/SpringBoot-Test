@@ -55,6 +55,19 @@
             <version>1.0.29</version>
         </dependency> -->
 		<!-- end -->
+		<!-- 数据源 -->
+		<dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.29</version>
+        </dependency>
+		<!-- 通用mapper配置 -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper</artifactId>
+			<version>3.3.8</version>
+		</dependency>
+		
 		
 		<!-- springboot  WEB项目，内置Tomcat -->
 		<dependency>
@@ -90,6 +103,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- 数据缓存 -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>        
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+        </dependency>
+
 	</dependencies>
 
 	<build>
